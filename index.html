@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confetti library</title>
+    <!-- CSS LINKS BEGIN BEGIN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/regular.min.css">
+    <link rel="stylesheet" href="css/solid.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- CSS LINKS  END -->
+ 
+</head>
+<body>
+    <!-- CONFETTI LIBRARY BEGIN -->
+    <section class="confetti-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                    <div class="earn-certificate">
+                        <h1>Why we need Professional Certification?</h1>
+                        <p>Generally, every individual has some sort of unique skills and abilities. However, they always have to provide some sort of proof about their skills and abilities. This is possible through a display of practical experience in using the skills and abilities that you have. For example, if you are skilled at dealing cards, then you have to show it practically every time someone asks proof for it. Now, we can know about the importance of certification here.</p> 
+                        <p>If you had a certificate of expertise in dealing cards, then you would not have to go through the trouble of showcasing your card-dealing skills to every person. All you have to do is take out your certificate of expertise and show it to them. The importance of certifications starts right from the academic journey in the initial stages. You get certificates as proof of completing your school education, high school, college, and university education.</p> 
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel">Congratulations   <i class="fa-solid fa-trophy"></i></h5>
+                                    <button type="button" onclick="closeBtn()" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        You truly are leading by example to ensure your team’s continuing reputation for excellence.!
+                                    </div>
+                                    <div class="modal-footer">
+                                    <a class="btn btn-primary"  href="images/download-file.jpg" download ><i class="fa-solid fa-file-arrow-down"></i> Download Certification</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <canvas id="my-canvas"></canvas>
+                            <a class="btn btn-primary" onclick="getCertificate()" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><i class="fa-solid fa-award"></i>Get your Cerficate</a>
+                        </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONFETTI LIBRARY END -->
+
+
+    <!-- SCRIPTS BEGIN --> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/solid.min.js"></script>
+    <script src="js/regular.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script>
+        var canvas = document.getElementById("my-canvas"); 
+        var confettiSettings = { target: 'my-canvas' };
+        var confetti = new ConfettiGenerator(confettiSettings);
+        const getCertificate =()=>{  
+        confetti.render();
+        }
+        const closeBtn =()=>{ 
+          canvas.style.display="none";
+        }
+    </script>
+    <!-- SCRIPTS END -->
+</body>
+</html>

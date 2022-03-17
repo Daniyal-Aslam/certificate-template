@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* UNIVERSAL STYLEING BEGIN */  
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif; 
+}
+/* TYPOGRAPHY BEGIN */
+h1{
+    font-size: 34px;
+    font-weight:700;
+}  
+ul{
+    padding: 0;
+    margin: 0;
+} 
+p{ 
+    font-size: 16px; 
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%; 
+    vertical-align: middle;
+}
+/* UNIVERSAL STYLEING BEGIN */
+/* CONFETTI SECTION BEGIN */
+.confetti-section{
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.767),rgba(0, 0, 0, 0.822)),url(../images/certifacte-bg.jpg)no-repeat center;
+    background-size: cover;
+}
+.confetti-section #my-canvas{
+    position: fixed;
+    top: 0;
+    left: 0; 
+}
+.earn-certificate{
+    display: grid;
+    height:100vh; 
+    place-content: center;
+} 
+.confetti-section small a {
+    color:#cd9139; 
+    text-decoration: underline;
+}
+.earn-certificate p + p{
+    padding:20px 0;
+}
+.earn-certificate p,.earn-certificate h1{
+    color: #fff;
+    line-height: 30px;
+}
+.earn-certificate h1{ 
+    line-height: 40px;
+    color: #cd9139; 
+     margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.earn-certificate .modal-title{ 
+    color: #cd9139;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.earn-certificate .modal-body{
+    color: #000;
+    font-weight: 600;
+}
+.earn-certificate a{
+    width:50%;
+    margin: auto;
+}
+.earn-certificate svg{
+    margin: 0 10px;
+    font-size: 18px;
+    transition: 0.6s ease;
+}
+.modal-footer a svg{
+    margin: 0;
+    margin-right: 5px;
+}   
+.earn-certificate .btn-primary:hover svg{
+    animation: iconMove 1s alternate-reverse infinite;
+}
+@keyframes iconMove {
+    to{
+        transform: translateY(0);
+        transition: 0.6s ease-in-out;
+    }
+    from{
+        transform: translateY(2px);
+        transition: 0.6s ease-in-out;
+    }
+}
+.btn-primary{ 
+    background: #cd9139; 
+    border: 1px solid #cd9139;
+    transition: 0.6s ease;
+}
+.btn-primary:hover,.btn-check:focus + .btn-primary, .btn-primary:focus,.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus{
+    background: #cd9139; 
+    border: 1px solid #cd9139; 
+    box-shadow: none;
+}
+.earn-certificate .modal-title{
+    text-align: center;
+    width: 100%;
+}
+.earn-certificate .modal-footer{
+    justify-content: center;
+}
+/* CONFETTI SECTION END */
+
+/*-------------------- RESPONSIVE BEGIN --------------------------- */
+@media screen and (max-width:600px) {
+    .earn-certificate,.confetti-section{
+        height: auto;
+        padding: 40px 0;
+    }
+    h1{
+        font-size: 27px;
+    }
+    p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+/*-------------------- RESPONSIVE END -------------------------------*/
