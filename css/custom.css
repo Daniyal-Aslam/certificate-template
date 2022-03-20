@@ -118,17 +118,22 @@ img{
 /* CONFETTI SECTION END */
 
 /*-------------------- RESPONSIVE BEGIN --------------------------- */
-@media screen and (max-width:600px) {
+@media screen and (max-width:767px) {
     .earn-certificate,.confetti-section{
         height: auto;
-        padding: 40px 0;
+        padding: 20px 0;
     }
     h1{
-        font-size: 27px;
+        font-size: 22px;
     }
     p{
         font-size: 15px;
-        line-height: 20px;
+    }
+    .earn-certificate p{ 
+        line-height:22px;
+    }
+    .earn-certificate a{
+        width: 65%;
     }
 }
 /*-------------------- RESPONSIVE END -------------------------------*/
